@@ -7,25 +7,33 @@
 body {
     font-family: fantasy, Arial, cursive;
     color: lightskyblue;
+    background-color: lightgrey;
 }
 
 header {
     padding: 20px 35px;
     background-color: navy;
+    color: lightgrey;
     justify-content: space-between;
 }
 
 header h1 {
-    Font-weight: bold;
-    font-size: 36px;
     color: peachpuff;
-    margin: 0;
+    font-size: 50px;
     display: inline;
+    margin: 0;
+    font-weight: bold;
 }
 
 header nav {
     float: right;
     margin: 7px 0;
+}
+
+.header div {
+    margin-right: 20px;
+    float: right;
+    font-family: fantasy;
 }
 
 header nav ul {
@@ -66,12 +74,20 @@ header nav ul {
 .text-form h2 {
     display: center;
     font-size: 24px;
-    margin: 0;
 }
 
 .intro h2 {
     font-weight: bold;
+    color: lightskyblue;
     justify-content: flex-start;
+    align-items: start;
+    flex-wrap: wrap;
+}
+
+.intro {
+    margin: 20px;
+    display: inline-block;
+    justify-content: flex-end;
 }
 
 .intro p {
@@ -120,7 +136,28 @@ header nav ul {
     color: black;
 }
 
+.service-grid-item{
+    justify-content: stretch
+}
+
 .box6 {
+    background-image: url(../images/Capture.jpg);
+    width: 50%;
     grid-column: 2/4;
     grid-row: 2/-1;
+}
+
+.box5 {
+    background-image: url(../images/Capture2.PNG);
+    align-items: stretch;
+}
+
+.box1 {
+    background-image: url(../images/Capture3.PNG);
+    align-items: stretch;
+}
+
+.box3 {
+    background-image: url(../images/Capture4.PNG);
+    align-items: stretch;
 }
