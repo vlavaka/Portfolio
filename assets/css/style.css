@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: fantasy, Arial, cursive;
+    color: lightskyblue;
+}
+
+header {
+    padding: 20px 35px;
+    background-color: navy;
+    justify-content: space-between;
+}
+
+header h1 {
+    Font-weight: bold;
+    font-size: 36px;
+    color: peachpuff;
+    margin: 0;
+    display: inline;
+}
+
+header nav {
+    float: right;
+    margin: 7px 0;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.text-hero {
+    background-color: white;
+    padding: 20px;
+    color: #024e76;
+    width: 40%;
+    margin: 3.5%;
+}
+
+.text {
+    background-image: url(../images/image1.jpg);
+    height: 600px;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+.text-form {
+    border: solid 3px navy;
+    background-color: peachpuff;
+    padding: 20px;
+    width: 25%;
+    margin: 3.5%;
+}
+
+.text-form h2 {
+    display: center;
+    font-size: 24px;
+    margin: 0;
+}
+
+.intro h2 {
+    font-weight: bold;
+    justify-content: flex-start;
+}
+
+.intro p {
+    line-height: 1.7;
+    color: lightslategray;
+    width: 80%;
+    font-size: 20px;
+}
+
+.into p {
+    margin: 0 auto;
+    text-align: right;;
+}
+
+}
+.section-title {
+    font-size: 48px;
+    color: #024e76;
+    padding-bottom: 20px;
+    text-align: left;
+    margin: auto 35px auto;
+    width: 50%;
+    border-right: bold;
+}
+
+.section {
+    display: block;
+}
+
+.service-grid-container {
+    display: grid;
+}
+
+.service-grid-container {
+    max-width: 940px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 100px);
+    grid-gap: 10px;
+}
+
+.service-grid-item {
+    padding: 1em;
+    border: solid;
+    color: black;
+}
+
+.box6 {
+    grid-column: 2/4;
+    grid-row: 2/-1;
+}
