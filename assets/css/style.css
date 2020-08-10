@@ -7,25 +7,33 @@
 body {
     font-family: fantasy, Arial, cursive;
     color: lightskyblue;
+    background-color: lightgrey;
 }
 
 header {
     padding: 20px 35px;
     background-color: navy;
+    color: lightgrey;
     justify-content: space-between;
 }
 
 header h1 {
-    Font-weight: bold;
-    font-size: 36px;
     color: peachpuff;
-    margin: 0;
+    font-size: 50px;
     display: inline;
+    margin: 0;
+    font-weight: bold;
 }
 
 header nav {
     float: right;
     margin: 7px 0;
+}
+
+.header div {
+    margin-right: 20px;
+    float: right;
+    font-family: fantasy;
 }
 
 header nav ul {
@@ -66,18 +74,35 @@ header nav ul {
 .text-form h2 {
     display: center;
     font-size: 24px;
-    margin: 0;
-}
-
-.info > * {
-    display: inline;
 }
 
 .intro h2 {
     font-weight: bold;
+    color: lightskyblue;
     justify-content: flex-start;
+    align-items: start;
+    flex-wrap: wrap;
 }
 
+.intro {
+    margin: 20px;
+    display: inline-block;
+    justify-content: flex-end;
+}
+
+.intro p {
+    line-height: 1.7;
+    color: lightslategray;
+    width: 80%;
+    font-size: 15px;
+}
+
+.into p {
+    margin: 0 auto;
+    text-align: right;;
+}
+
+}
 .section-title {
     font-size: 48px;
     color: #024e76;
@@ -90,4 +115,63 @@ header nav ul {
 
 .section {
     display: block;
+}
+
+.service-grid-container {
+    display: grid;
+}
+
+.service-grid-container {
+    max-width: 940px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 100px);
+    grid-gap: 10px;
+}
+
+.service-grid-item {
+    padding: 1em;
+    border: solid;
+    color: black;
+}
+
+.service-grid-item{
+    justify-content: stretch
+}
+
+.box6 {
+    background-image: url(../images/Capture.jpg);
+    width: 50%;
+    grid-column: 2/4;
+    grid-row: 2/-1;
+}
+
+.box5 {
+    background-image: url(../images/Capture2.PNG);
+    align-items: stretch;
+}
+
+.box1 {
+    background-image: url(../images/Capture3.PNG);
+    align-items: stretch;
+}
+
+.box3 {
+    background-image: url(../images/Capture4.PNG);
+    align-items: stretch;
+}
+
+.contact {
+    padding: 20px 35px;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    font-weight: bold;
+    border-bottom: 20px;
+    color: lightslategray;
+}
+
+.contact h2 {
+    justify-content: flex-start;
+    font-size: large;
 }
